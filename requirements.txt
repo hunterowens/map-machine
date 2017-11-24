@@ -1,0 +1,6 @@
+TwitterAPI
+bs4
+python-dotenv
+flask
+requests
+gunicorn
