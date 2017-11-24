@@ -51,7 +51,7 @@ app = flask.Flask(__name__)
 def index():
     urls = random_url()
     title = get_title(urls['mapurl'])
-    content = title + urls['mapurl']
+    content = title + '  ' + urls['mapurl']
     tweet(content , urls['imgurl'])
     return "works"
 
