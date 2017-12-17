@@ -52,8 +52,8 @@ def index():
     urls = random_url()
     title = get_title(urls['mapurl'])
     content = title + '  ' + urls['mapurl']
-    tweet(content , urls['imgurl'])
-    return "works"
+    t = tweet(content , urls['imgurl'])
+    return t
 
 if __name__ == '__main__':
     app.run()
